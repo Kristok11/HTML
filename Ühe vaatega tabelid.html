@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Elements Example</title>
+    <style>
+      
+      table, th, td {
+        border: 1px solid black;
+      }
+
+      
+      #balance {
+        background-color: #12e64b;
+      }
+
+      
+      label, input, select {
+        margin: 5px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 10px;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Elements Example</h1>
+
+    
+    <label for="dropdown">Vali oma lemmik:</label>
+    <select id="dropdown">
+      <option value="option1">Õun</option>
+      <option value="option2">Pirn</option>
+      <option value="option3">Tomat</option>
+    </select>
+
+    
+    <label for="checkbox">Vajuta mind:</label>
+    <input type="checkbox" id="checkbox">
+
+    
+    <label for="date">Vali kuupäev</label>
+    <input type="date" id="date">
+
+   
+    <label for="file">Vali file:</label>
+    <input type="file" id="file">
+
+   
+    <form action="http://www.test.com/login/" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required="required" /><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required="required" />
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th width="150"></th>
+          <th>Withdrawn</th>
+          <th>Credit</th>
+          <th width="150" id="balance">Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Ost 1</td>
+            <td>15</td>
+            <td>24</td>
+            <td>-9</td>
+        </tr>
+        <tr>
+            <td>Ost 2</td>
+            <td>10</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+     
+      </tbody>
+    </table>
+
+
+    <table>
+      <tr>
+        <td colspan="2">Arvutamine </td>
+        <td>Kokku </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+
+    </table>
+    <table>
+        <tr>
+          <td colspan="3">Minu lemmikvärvid</td>
+        </tr>
+        <tr>
+          <td>Punane</td>
+          <td>Sinine</td>
+          <td>Roheline</td>
+        </tr>
+        <tr>
+          <td colspan="3">Minu lemmiktoit</td>
+        </tr>
+        <tr>
+          <td>Pitsa</td>
+          <td>Pasta</td>
+          <td>Burger</td>
+        </tr>
+        <tr>
+          <td colspan="3">Minu lemmiktegevus</td>
+        </tr>
+        <tr>
+          <td>Sportimine</td>
+          <td>Lugemine</td>
+          <td>Mängimine</td>
+        </tr>
+      </table>
+      
+
+      <table>
+        <tr>
+          <td>Sisseostude nimekiri</td>
+          <td>Kogus</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table>
+              <tr>
+                <td>Juust</td>
+                <td>2 tk</td>
+              </tr>
+              <tr>
+                <td>Leib</td>
+                <td>1 tk</td>
+              </tr>
+              <tr>
+                <td>Vorst</td>
+                <td>3 tk</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>Kartul</td>
+          <td>5 kg</td>
+        </tr>
+        <tr>
+          <td>Küüslauk</td>
+          <td>1 tk</td>
+        </tr>
+      </table>
+      
+    </body>
+    </html>
+    
+      
